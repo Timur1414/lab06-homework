@@ -3,6 +3,7 @@
 #include "formatter_ex.h"
 #include "solver.h"
 
+
 int main()
 {
     float a = 0;
@@ -18,12 +19,12 @@ int main()
     {
         solve(a, b, c, x1, x2);
 
-        formatter(std::cout, "x1 = " + std::to_string(x1));
-        formatter(std::cout, "x2 = " + std::to_string(x2));
+        Formatter(std::cout, "x1 = " + std::to_string(x1));
+        Formatter(std::cout, "x2 = " + std::to_string(x2));
     }
     catch (const std::logic_error& ex)
     {
-        formatter(std::cout, ex.what());
+        Formatter(std::cout, ex.what());
     }
 
     return 0;
