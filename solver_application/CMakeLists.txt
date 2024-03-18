@@ -20,3 +20,5 @@ add_library(solver STATIC ../solver_lib/solver.h ../solver_lib/solver.cpp)
 
 add_executable(equation equation.cpp)
 target_link_libraries(equation formatter_ex solver)
+
+include(CPackConfig.cmake)
