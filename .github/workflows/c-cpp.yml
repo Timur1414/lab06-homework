@@ -22,3 +22,9 @@ jobs:
         cd ..
         mv _build/*.tar.gz artifacts
         tree artifacts
+    - name: Archive artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: artifacts
+        path: |
+          artifacts
