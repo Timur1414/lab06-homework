@@ -1,5 +1,0 @@
-/home/ubuntu/Timur1414/homework/lab03-hw/hello_world_application/_builds/CMakeFiles/formatter.dir
-/home/ubuntu/Timur1414/homework/lab03-hw/hello_world_application/_builds/CMakeFiles/formatter_ex.dir
-/home/ubuntu/Timur1414/homework/lab03-hw/hello_world_application/_builds/CMakeFiles/hello_world.dir
-/home/ubuntu/Timur1414/homework/lab03-hw/hello_world_application/_builds/CMakeFiles/edit_cache.dir
-/home/ubuntu/Timur1414/homework/lab03-hw/hello_world_application/_builds/CMakeFiles/rebuild_cache.dir
