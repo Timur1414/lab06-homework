@@ -1,3 +1,0 @@
-/home/ubuntu/Timur1414/homework/lab03-hw/formatter_lib/_build/CMakeFiles/formatter.dir
-/home/ubuntu/Timur1414/homework/lab03-hw/formatter_lib/_build/CMakeFiles/edit_cache.dir
-/home/ubuntu/Timur1414/homework/lab03-hw/formatter_lib/_build/CMakeFiles/rebuild_cache.dir
