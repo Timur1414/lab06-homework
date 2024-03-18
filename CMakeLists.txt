@@ -17,7 +17,7 @@ add_library(formatter_ex STATIC formatter_ex_lib/formatter_ex.h formatter_ex_lib
 
 target_link_libraries(formatter_ex formatter)
 add_library(solver STATIC solver_lib/solver.h solver_lib/solver.cpp)
-add_executable(equation equation.cpp)
+add_executable(equation solver_application/equation.cpp)
 target_link_libraries(equation formatter_ex solver)
 
 include(CPackConfig.cmake)
