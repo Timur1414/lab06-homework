@@ -15,7 +15,7 @@ jobs:
     - uses: actions/checkout@v3
     - name: build
       run: |
-        -H. -B_build -DCPACK_GENERATOR="TGZ"
+        cmake -H. -B_build -DCPACK_GENERATOR="TGZ"
         cmake --build _build --target package
         mkdir artifacts
         mv _build/*.tar.gz artifacts
