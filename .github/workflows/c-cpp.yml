@@ -1,0 +1,22 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: build
+      run: |
+        -H. -B_build -DCPACK_GENERATOR="TGZ"
+        cmake --build _build --target package
+        mkdir artifacts
+        mv _build/*.tar.gz artifacts
+        tree artifacts
