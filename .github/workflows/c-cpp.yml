@@ -17,12 +17,18 @@ jobs:
       run: |
         cmake -H. -B_build
         cmake --build _build
+    - name: Build tar.gz
+      if: startsWith(github.ref, 'refs/tags/')
+      run: |
+        cmake -H. -B_build
+        cmake --build _build
         cd _build
         cpack -G "TGZ"
         cd ..
         mv _build/*.tar.gz artifacts
         tree artifacts
     - name: Build deb
+      if: startsWith(github.ref, 'refs/tags/')
       run: |
         cmake -H. -B_build
         cmake --build _build
